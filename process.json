@@ -1,0 +1,15 @@
+{
+  "name": "nextWithDva",
+  "script": "./server.js",
+  "cwd": "./",
+  "instances": 2,
+  "watch": [".next"],
+  "ignore_watch": ["node_modules", "logs"],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "max-memory-restart": "200M"
+}

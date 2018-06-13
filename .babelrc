@@ -1,20 +1,26 @@
 {
-    "presets": ["next/babel"],
-    "plugins": [
-        [
-            "module-resolver",
-            {
-                "alias": {
-                    "dva": "dva-no-router"
-                }
-            }
-        ],
-        [
-            "import",
-            {
-                "libraryName": "antd",
-                "style": false
-            }
-        ]
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "dva": "dva-no-router"
+        }
+      }
+    ],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": false
+      }
+    ],
+    [
+      "styled-jsx/babel",
+      {
+        "plugins": ["styled-jsx-plugin-less"]
+      }
     ]
+  ]
 }
